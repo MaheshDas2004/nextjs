@@ -85,18 +85,3 @@ this architecture introduces a new approach to creating react components by divi
 Server components are rendered on the server and can fetch data directly from the server, while client components are rendered on the client and can handle user interactions and state management. This separation allows for better performance and scalability, as server components can be optimized for server-side rendering, while client components can be optimized for client-side interactivity.
 
 by default nextjs treats all components as server components. to create a client component you need to add "use client" directive at the top of the file.
-
-# Routing in Next.js:
-File-based
-Routing in Next.js is based on the file system. crete a folder named about inside the app directory and then create a page.js or page.tsx file inside that folder. this will create a route /about
-
-Routing coventions in Next.js:
-all routes live in the app directory.
-route files must be named page.js or page.tsx
-each folder represents a segment of the url path
-
-# nested routing:
-to create a nested route you need to create a new folder inside the app directory and then create a page.js or page.tsx file inside that folder. for example to create a route /blog/post you need to create a folder named blog inside the app directory and then create a folder named post inside the blog folder and then create a page.js or page.tsx file inside the post folder.
-
-# dynamic routing:
-to create a dynamic route you need to create a folder with the name of the dynamic segment inside the app directory and then create a page.js or page.tsx file inside that folder. for example to create a route /product/[id] you need to create a folder named product inside the app directory and then create a folder named [id] inside the product folder and then create a page.js or page.tsx file inside the [id] folder.
